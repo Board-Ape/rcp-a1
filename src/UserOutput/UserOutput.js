@@ -1,10 +1,10 @@
 import React from 'react';
 
-const userOutput = () => {
+const userOutput = (props) => {
     return (
         <div>
             <p>First User Output Paragraph</p>
-            <p>Second User Output Paragraph</p>
+            <p>{props.content}</p>
         </div>
     )
 }
