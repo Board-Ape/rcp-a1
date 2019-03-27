@@ -11,12 +11,18 @@ class App extends Component {
     }
   }
 
+  updateUserName = () => {
+    this.setState({
+      username: "Obama!"
+    })
+  }
+
   render() {
     return (
       <div className="App">
         <h1>Assignment 1</h1>
         <UserInput />
-        <UserOutput content="Output 100" username={this.state.username}/>
+        <UserOutput content="Output 100" username={this.state.username} updateUserName={this.updateUserName}/>
         <UserOutput content="Output 200" />
         <UserOutput content="Output 300" />
       </div>
