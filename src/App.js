@@ -7,7 +7,8 @@ class App extends Component {
   constructor() {
     super()
     this.state = {
-      username: "Sam"
+      username: 'Sam',
+      input: ''
     }
   }
 
@@ -17,14 +18,20 @@ class App extends Component {
     })
   }
 
+  changeHandler = (event) => {
+    this.setState({
+      username: event.target.value,
+      input: event.target.value
+    })
+  }
+
   render() {
     return (
       <div className="App">
         <h1>Assignment 1</h1>
-        <UserInput />
+        <UserInput input={this.state.input} changeHandler={this.changeHandler} />
         <UserOutput content="Output 100" username={this.state.username} updateUserName={this.updateUserName}/>
-        <UserOutput content="Output 200" />
-        <UserOutput content="Output 300" />
+
       </div>
     );
   }
