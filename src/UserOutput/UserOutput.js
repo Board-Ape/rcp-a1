@@ -3,7 +3,7 @@ import React from 'react';
 const userOutput = (props) => {
     return (
         <div>
-            <p>First User Output Paragraph</p>
+            <p>Username: {props.username ? props.username : '____'} Output Paragraph</p>
             <p>{props.content}</p>
         </div>
     )

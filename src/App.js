@@ -9,7 +9,7 @@ class App extends Component {
       <div className="App">
         <h1>Assignment 1</h1>
         <UserInput />
-        <UserOutput content="Output 100" />
+        <UserOutput content="Output 100" username="Sam"/>
         <UserOutput content="Output 200" />
         <UserOutput content="Output 300" />
       </div>
