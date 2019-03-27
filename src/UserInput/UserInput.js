@@ -3,7 +3,10 @@ import React from 'react';
 const userInput = () => {
     return (
         <div>
-            userInput
+            <input 
+                type="text" 
+                placeholder="User Input"
+            />
         </div>
     )
 }

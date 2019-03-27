@@ -3,7 +3,8 @@ import React from 'react';
 const userOutput = () => {
     return (
         <div>
-            userOutput
+            <p>First User Output Paragraph</p>
+            <p>Second User Output Paragraph</p>
         </div>
     )
 }
