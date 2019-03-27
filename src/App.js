@@ -31,7 +31,6 @@ class App extends Component {
         <h1>Assignment 1</h1>
         <UserInput input={this.state.input} changeHandler={this.changeHandler} />
         <UserOutput content="Output 100" username={this.state.username} updateUserName={this.updateUserName}/>
-
       </div>
     );
   }
