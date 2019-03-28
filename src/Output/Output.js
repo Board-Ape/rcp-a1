@@ -6,7 +6,7 @@ const userOutput = (props) => {
         <div>
             <button onClick={props.handleSubmit}>Submit To Do</button>
             <h1>{props.input}</h1>
-            <Card todos={props.todos}/>
+            <Card todos={props.todos} delete={props.delete}/>
         </div>
     )
 };

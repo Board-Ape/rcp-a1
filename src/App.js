@@ -25,6 +25,15 @@ class App extends Component {
       todos: [...currTodos, currInput]
     })
   }
+
+  handleDelete = (event, key) => {
+    event.preventDefault()
+    
+    let newState = this.state.todos.filter((todo, i) => i !== key)
+    this.setState({
+      todos: newState
+    })
+  }
   
   render() {
     return (
@@ -38,6 +47,7 @@ class App extends Component {
           todos={this.state.todos}
           input={this.state.input}
           handleSubmit={this.handleSubmit}
+          delete={this.handleDelete}
         />
       </div>
     )
